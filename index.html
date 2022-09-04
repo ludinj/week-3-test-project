@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <script
+      src="https://kit.fontawesome.com/fa36e3cf85.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Responsive Side Menu</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="sideMenu">
+        <div class="nav__brand">
+          <p>Games</p>
+        </div>
+        <div class="tags">
+          <h1>Tags</h1>
+          <ul class="nav__items">
+            <div class="nav__item" id="animals">
+              <i class="fa-solid fa-dog"></i>
+              <li>Animals</li>
+            </div>
+            <div class="nav__item" id="nature">
+              <i class="fa-solid fa-tree"></i>
+              <li>Nature</li>
+            </div>
+            <div class="nav__item" id="food">
+              <i class="fa-solid fa-burger"></i>
+              <li>Food</li>
+            </div>
+            <div class="nav__item" id="lifeStyle">
+              <i class="fa-solid fa-guitar"></i>
+              <li>Life style</li>
+            </div>
+            <div class="nav__item" id="travel">
+              <i class="fa-solid fa-plane"></i>
+              <li>Travel</li>
+            </div>
+            <div class="nav__item" id="sports">
+              <i class="fa-solid fa-basketball"></i>
+              <li>Sports</li>
+            </div>
+          </ul>
+        </div>
+        <div class="nav__footer">
+          <i class="fa-regular fa-copyright"></i>
+          <p>All rights reserved</p>
+        </div>
+      </nav>
+      <div class="content">
+        <div id="hamburgerBtn" class="hamburgerBtn">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <div class="search">
+          <input type="text" id="search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="posts">
+          <h1>Featured.</h1>
+          <div class="featured__posts" id="features"></div>
+          <div class="grid" id="grid"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js" type="module" defer></script>
+  </body>
+</html>

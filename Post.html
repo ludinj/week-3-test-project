@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/singlePost.css" />
+    <link rel="shortcut icon" href="#" />
+    <script
+      src="https://kit.fontawesome.com/fa36e3cf85.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="navbar">
+        <div class="navbar__content">
+          <a href="http://127.0.0.1:5501/">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <div class="userSelect">
+            <span>User:</span>
+            <select name="" id="selectInput">
+              <option value="1" selected>Anakin</option>
+              <option value="2">Padme</option>
+              <option value="3">Obi-Wan</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="post" id="post">
+        <img src="" alt="image" id="postImage" />
+        <div class="featured__info">
+          <div class="icons">
+            <div class="like">
+              <i class="fa-solid fa-thumbs-up" id="like"></i>
+              <span id="likesNumber"></span>
+            </div>
+            <div class="edit">
+              <i class="fa-solid fa-trash" id="delete"></i>
+              <i class="fa-solid fa-pen-to-square" id="edit"></i>
+            </div>
+          </div>
+          <h4 id="title"></h4>
+          <p id="subtitle">-</p>
+          <p id="body"></p>
+          <div class="footer">
+            <p>Author: <span id="author"></span></p>
+            <small id="date"></small>
+          </div>
+        </div>
+      </div>
+      <div class="comments" id="comments">
+        <h3>Comments:</h3>
+
+        <div class="input__box">
+          <input
+            type="text"
+            id="commentInput"
+            placeholder="Add a comment..."
+            autocomplete="off"
+          />
+          <button class="button" id="commentButton">Comentar</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/singlePost.js" type="module" defer></script>
+  </body>
+</html>
